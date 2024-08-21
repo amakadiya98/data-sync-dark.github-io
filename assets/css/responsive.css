@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1650px) {
+    .solution-section .solution-img {
+        padding: 55px 65px 20px;
+    }
+}
+
 @media only screen and (max-width: 1600px) {
     .header-section .navbar .navbar-nav .nav-item {
         min-width: 120px;
@@ -23,8 +29,23 @@
         padding: 2px 35px;
     }
 
-    .solution-section .solution-img {
-        padding: 55px 65px 20px;
+    .solution-section .solution-image-box .image-grid-part {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .solution-section .solution-image-box {
+        height: 100%;
+    }
+
+    /* new01 */
+    .retail-tool-section .tabslider-content h4 {
+        font-size: 42px;
+    }
+
+    .retail-tool-section .tabslider-content {
+        padding: 146px 50px;
     }
 
 }
@@ -46,6 +67,13 @@
         font-size: 20px;
         padding: 0px 25px;
     }
+
+    .benefits-section .benefit-content-section .benefit-card p {
+        font-size: 22px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -70,6 +98,9 @@
 
     .solution-section .solution-img {
         padding: 55px 55px 16px;
+    }
+    .retail-section .section-grid-container .section-grid-card .list-items ul li {
+        line-height: 40px;
     }
 }
 
@@ -103,6 +134,16 @@
 }
 
 @media only screen and (max-width: 992px) {
+
+    .solution-section .section-title{
+        display: none;
+    }
+
+    .solution-section .section-title.mobile{
+        display: block;
+        margin-bottom: 50px;
+    }
+
     .custom-toggler .close-icon {
         display: none;
     }
@@ -139,7 +180,7 @@
 
     .header-section .button-part {
         justify-content: center;
-        margin:10px 0px
+        margin: 10px 0px
     }
 
     .header-section .primary-button {
@@ -172,12 +213,12 @@
         width: 90%;
     }
 
-    .banner-section .banner-content .image-box .image-block{
+    .banner-section .banner-content .image-box .image-block {
         display: flex;
         justify-content: center;
     }
 
-    .banner-section .banner-content .image-box .top-block{
+    .banner-section .banner-content .image-box .top-block {
         display: flex;
         justify-content: center;
     }
@@ -191,11 +232,10 @@
     }
 
     .solution-section .solution-img .icon-box {
-        width: 70px;
-        height: 70px;
         top: -26px;
     }
-    .solution-main-content .row{
+
+    .solution-main-content .row {
         flex-direction: column-reverse;
         gap: 60px;
     }
@@ -203,10 +243,62 @@
     .solution-section .solution-image-box {
         gap: 60px;
     }
+
+    /* new01 */
+    .retail-tool-section .tabslider-content {
+        max-width: 100%;
+        width: 100%;
+        max-height: 194px;
+    }
+
+    .retail-tool-section .tabslider-content h4 {
+        font-size: 30px;
+    }
+
+
+    .benefits-section .benefit-content-section .benefit-card p {
+        font-size: 16px;
+    }
+    .benefits-section .benefit-content-section .benefit-card {
+        border-radius: 8px;
+        height: auto;
+        width: 100%;
+        padding: 26px 15px 18px;
+        min-height: 100px;
+    }
+    .benefits-section .benefit-content-section .benefit-card .icon-box img {
+        width: 16px;
+        height: 16px;
+    }
+    .benefits-section .benefit-left, .benefits-section .benefit-right, .benefits-section .benefit-image {
+        gap: 50px;
+    }
+    .retail-section .section-details-para {
+        font-size: 20px;
+        line-height: normal;
+        margin-top: 25px;
+    }
+    .expert-section .section-title{
+        padding-top: 100px;
+    }
+    .expert-section::before {
+        position: absolute;
+        content: "";
+        top: 14px;
+        background-size: contain;
+        left: 0px;
+        background-image: url(../images/experct-bg-design.png);
+        width: 752px;
+        background-repeat: no-repeat;
+        height: 185px;
+        z-index: -1;
+    }
 }
 
-@media only screen and (max-width: 768px){
-    .banner-section .banner-content .right-box, .banner-section .banner-content .left-box {
+@media only screen and (max-width: 768px) {
+
+    .banner-section .banner-content .right-box,
+    .banner-section .banner-content .left-box {
         gap: 40px;
     }
 
@@ -243,9 +335,12 @@
         font-size: 18px;
         padding: 0px 40px;
     }
+    .retail-section .section-grid-container {
+        margin-top: 30px;
+    }
 }
 
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 620px) {
     .banner-section .banner-content .icon-text-box h6 {
         font-size: 16px;
     }
@@ -274,9 +369,36 @@
     .banner-section .banner-content .icon-text-box h6 {
         padding: 0 40px 0 10px;
     }
+    .benefits-section .benefit-content-section .benefit-card p {
+        font-size: 10px;
+    }
+    .benefits-section .benefit-content-section .benefit-card {
+        border-radius: 8px;
+        height: auto;
+        width: 100%;
+        padding: 16px 5px 8px;
+        min-height: 50px;
+    }
+    .benefits-section .benefit-content-section .benefit-card .icon-box img {
+        width: 11px;
+        height: 11px;
+    }
+    .benefits-section .benefit-left, .benefits-section .benefit-right, .benefits-section .benefit-image {
+        gap: 50px;
+    }
+    .benefits-section .benefit-content-section {
+        padding: 20px 0;
+    }
+    .section-card-header img{
+        width: 60px;
+        height: 60px;
+    }
+    .retail-section .section-grid-container .section-grid-card {
+        padding: 20px;
+    }
 }
 
-@media only screen and (max-width: 520px){
+@media only screen and (max-width: 520px) {
     .banner-section .banner-content .icon-text-box h6 {
         font-size: 13px;
     }
@@ -285,7 +407,8 @@
         min-width: 130px;
     }
 
-    .banner-section .banner-content .right-box, .banner-section .banner-content .left-box {
+    .banner-section .banner-content .right-box,
+    .banner-section .banner-content .left-box {
         gap: 30px;
     }
 
@@ -316,9 +439,39 @@
     .banner-section .banner-content {
         padding: 24px 0;
     }
+
+    /* new01 */
+    .retail-tool-section .tabslider-content h4 {
+        font-size: 28px;
+        border-radius: 16px;
+    }
+    .retail-section .section-details-para {
+        font-size: 15px;
+        line-height: normal;
+        margin-top: 15px;
+    }
+    .retail-section .section-grid-container {
+        margin-top: 18px;
+    }
+    .team-section .team-content-data {
+        padding-top: 68px;
+    }
+    .contact_container {
+        padding: 12px 25px 25px 25px;
+        border-radius: 17px;
+    }
+    .contact_form_label {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .primary-button {
+        font-size: 11px;
+        line-height:normal;
+        padding: 10px 60px;
+    }
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 420px) {
     .banner-section .banner-content .icon-text-box {
         min-width: 120px;
     }
@@ -345,7 +498,8 @@
         line-height: normal;
     }
 
-    .banner-section .banner-content .right-box, .banner-section .banner-content .left-box {
+    .banner-section .banner-content .right-box,
+    .banner-section .banner-content .left-box {
         gap: 40px;
     }
 
@@ -356,20 +510,31 @@
     .banner-section .banner-content .image-box .image-block img {
         margin-top: 16px;
     }
+    .section-title {
+        font-size: 25px;
+        line-height: 38px;
+    }
+    .section-title-small {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
 
 }
 
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 376px) {
     .banner-section .banner-content {
         gap: 5px;
     }
 
-    .banner-section .banner-content .right-box, .banner-section .banner-content .left-box {
+    .banner-section .banner-content .right-box,
+    .banner-section .banner-content .left-box {
         gap: 30px;
         margin-bottom: 25px;
     }
 
-    .banner-section .banner-content .right-box, .banner-section .banner-content .left-box {
+    .banner-section .banner-content .right-box,
+    .banner-section .banner-content .left-box {
         gap: 30px;
     }
 
@@ -381,6 +546,7 @@
         font-size: 13px;
         padding: 6px 15px;
         line-height: normal;
+        border-radius: 3px;
         min-width: 100px;
     }
 
