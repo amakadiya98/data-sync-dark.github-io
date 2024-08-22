@@ -2093,7 +2093,6 @@ border-bottom-left-radius: 0px;
 
   .solution-partner-content .brand {
     padding: 6px;
-    width: 27%;
   }
 
   .expert-section .carousel .card-content .card-logo img {
@@ -2368,7 +2367,7 @@ border-bottom-left-radius: 0px;
 
   .contact_form_check_input:checked::after {
     top: 1px;
-    left: 6px;
+    left: 7px;
     width: 5px;
     height: 12px;
   }
