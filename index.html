@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/owl.carousel.css" />
   <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/responsive.css" />
   <link rel="stylesheet" href="./assets/css/contact_terms.css">
+
 </head>
 
 <body>
@@ -28,22 +30,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link activeNav" id="home" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">DataSync</a>
+              <a class="nav-link" href="#dataSync">DataSync</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -79,14 +81,19 @@
           </div>
           <div class="image-box">
             <div class="top-block">
-              <img src="./assets/images/banner-center-top.png">
+              <img src="./assets/images/banner-tag-img.svg">
+              <h6>Software</h6>
             </div>
+
+
             <div class="image-block">
               <img src="./assets/images/banner-center.png" alt="banner" />
             </div>
             <div class="button-block">
-              <button class="btn primary-button" type="submit">Contact
-                Us</button>
+              <a href="#contact-us">
+                <button class="btn primary-button" type="submit">Contact
+                  Us</button>
+              </a>
             </div>
           </div>
           <div class="right-box">
@@ -114,17 +121,23 @@
               </div>
             </div>
           </div>
+          <div class="wht-button">
+            <a href="#">
+              <button class="btn primary-button" type="submit"><img src="./assets/images/whtsap.svg" class="me-2"
+                  alt=""> Whatsapp</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="solution-section common-spacing">
+  <section class="solution-section common-spacing" id="dataSync">
     <div class="container">
       <div class="solution-main-content">
         <div class="row">
           <div class="col-lg-4">
             <div class="solution-text">
-              <h2 class="section-title text-left">End to End Retail
+              <h2 class="section-title text-start">End to End Retail
                 Solutions</h2>
 
               <p class="mt-4">DataSync is a comprehensive Retail BI tool
@@ -135,7 +148,7 @@
             </div>
           </div>
           <div class="col-lg-8">
-            <h2 class="section-title mobile text-left">End to End Retail
+            <h2 class="section-title mobile text-start">End to End Retail
               Solutions</h2>
             <div class="solution-image-box">
               <div class="image-grid-part">
@@ -150,7 +163,7 @@
                 <div class="solution-img">
                   <div class="icon-box">
                     <div class="image-block">
-                      <img src="./assets/images/solution-1.svg" alt="icon" />
+                      <img src="./assets/images/solution-2.svg" alt="icon" />
                     </div>
                   </div>
                   <p>Model</p>
@@ -160,7 +173,7 @@
                 <div class="solution-img">
                   <div class="icon-box">
                     <div class="image-block">
-                      <img src="./assets/images/solution-1.svg" alt="icon" />
+                      <img src="./assets/images/solution-3.svg" alt="icon" />
                     </div>
                   </div>
                   <p>Informed Actions</p>
@@ -168,7 +181,7 @@
                 <div class="solution-img">
                   <div class="icon-box">
                     <div class="image-block">
-                      <img src="./assets/images/solution-1.svg" alt="icon" />
+                      <img src="./assets/images/solution-4.svg" alt="icon" />
                     </div>
                   </div>
                   <p>Business Scale</p>
@@ -176,7 +189,7 @@
                 <div class="solution-img">
                   <div class="icon-box">
                     <div class="image-block">
-                      <img src="./assets/images/solution-1.svg" alt="icon" />
+                      <img src="./assets/images/solution-5.png" alt="icon" />
                     </div>
                   </div>
                   <p>Grow your Business</p>
@@ -189,6 +202,75 @@
     </div>
   </section>
   <section class="solution-partner-section common-spacing">
+    <div class="container">
+      <h2 class="section-title">Solution Partners</h2>
+      <div class="solution-partner-content">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/google.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/instagram.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/amazon.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/hepsi.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/trend.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/logo.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/n11.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/pazarama.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/beymen.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/ideasoft.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/ticimax.png" alt="google" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xm-3">
+            <div class="brand">
+              <img src="./assets/images/partner/t-soft.png" alt="google" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="solution-partner-section common-spacing">
     <div class="container">
       <h2 class="section-title">Solution Partners</h2>
       <div class="solution-partner-content">
@@ -232,9 +314,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="feature-section common-spacing">
-
+  </section> -->
+  <section class="feature-section common-spacing" id="features">
     <div class="container">
       <div class="feature-scetion-card">
         <h2 class="section-title">Features of DataSync BI Tool</h2>
@@ -376,7 +457,7 @@
                   </div>
                   <div class="col-lg-5">
                     <div class="img-part">
-                      <img src="./assets/images/features-tab-img4.png" width="100%" alt>
+                      <img src="./assets/images/features-tab-img1.png" width="100%" alt>
                     </div>
                   </div>
                 </div>
@@ -417,7 +498,7 @@
                   </div>
                   <div class="col-lg-5">
                     <div class="img-part">
-                      <img src="./assets/images/features-tab-img1.png" width="100%" alt>
+                      <img src="./assets/images/features-tab-img4.png" width="100%" alt>
                     </div>
                   </div>
                 </div>
@@ -759,7 +840,7 @@
         </div>
         <div class="benefit-image">
           <div class="image-block">
-            <img src="./assets/images/befit-image.png" width="100%" alt="benefit" />
+            <img src="./assets/images/befit-image.png" width="100%" alt="benefit" class="center-img"/>
           </div>
           <div class="benefit-card">
             <div class="icon-box">
@@ -793,7 +874,7 @@
     </div>
 
   </section>
-  <section class="retail-section common-spacing">
+  <section class="retail-section common-spacing" id="services">
     <div class="container">
       <p class="section-title-small">
         Additional Services To Boost Performance
@@ -1047,7 +1128,7 @@
         DataSync is here to support your business as a whole. </p>
       <div class="carousel">
         <!-- new01 -->
-        <div class="owl-carousel mainSlider owl-theme">
+        <div class="owl-carousel mainSlider owl-theme wideWidth">
           <div class="item">
             <div class="card-content">
               <div class="card-logo">
@@ -1112,37 +1193,6 @@
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="card-content">
-              <div class="card-logo">
-                <img src="./assets/images/experct-carousel-img1.svg" alt>
-              </div>
-              <div class="card-details">
-                <h6 class="card-details-text">Identify Specific Trends To
-                  Increase Sales & Profitability: Examine
-                  Financial data at a granular
-                  level such as by channel, category, brand or product. This
-                  detailed view helps identify specific
-                  trends, performance metrics, and areas needing attention.
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card-content">
-              <div class="card-logo">
-                <img src="./assets/images/experct-carousel-img2.svg" alt>
-              </div>
-              <div class="card-details">
-                <h6 class="card-details-text">Performance Monitoring:
-                  Retailers can continuously monitor financial
-                  performance across various
-                  segments, ensuring alignment with business goals and quickly
-                  addressing any deviations or issues.
-                </h6>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -1150,7 +1200,7 @@
     <div class="bg-design"></div>
   </section>
 
-  <section class="team-section common-spacing">
+  <section class="team-section common-spacing" id="team">
     <div class="container text-center">
       <p class="section-title-small">Experienced Team Leaders Across All
         Business
@@ -1281,7 +1331,7 @@
       </div>
     </div>
   </section>
-  <section class="testimonial-section common-spacing">
+  <section class="testimonial-section common-spacing" id="testimonials">
     <div class="container">
       <h2 class="section-title">Client Testimonials</h2>
       <div class="carousel">
@@ -1353,77 +1403,12 @@
 
             </div>
           </div>
-          <div class="item">
-            <div class="blank-space"></div>
-            <div class="card-content">
-              <div class="card-details">
-                <h6 class="card-details-text">Lorem ipsum dolor sit amet
-                  consectetur. Egestas volutpat morbi bibendum
-                  lacus.Lorem ipsum dolor sit
-                  amet consectetur. Egestas volutpat morbi bibendum lacus.
-                </h6>
-              </div>
-              <div class="card-profile">
-                <div class="profile-logo">
-                  <img src="./assets/images/client-testimonials-img.png" alt>
-                </div>
-                <div class="name-details">
-                  <h3>Ahmet Örnekadam</h3>
-                  <h5>CEO of XYZ Company</h5>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="item">
-            <div class="blank-space"></div>
-            <div class="card-content">
-              <div class="card-details">
-                <h6 class="card-details-text">Lorem ipsum dolor sit amet
-                  consectetur. Egestas volutpat morbi bibendum
-                  lacus.Lorem ipsum dolor sit
-                  amet consectetur. Egestas volutpat morbi bibendum lacus.
-                </h6>
-              </div>
-              <div class="card-profile">
-                <div class="profile-logo">
-                  <img src="./assets/images/client-testimonials-img.png" alt>
-                </div>
-                <div class="name-details">
-                  <h3>Ahmet Örnekadam</h3>
-                  <h5>CEO of XYZ Company</h5>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="item">
-            <div class="blank-space"></div>
-            <div class="card-content">
-              <div class="card-details">
-                <h6 class="card-details-text">Lorem ipsum dolor sit amet
-                  consectetur. Egestas volutpat morbi bibendum
-                  lacus.Lorem ipsum dolor sit
-                  amet consectetur. Egestas volutpat morbi bibendum lacus.
-                </h6>
-              </div>
-              <div class="card-profile">
-                <div class="profile-logo">
-                  <img src="./assets/images/client-testimonials-img.png" alt>
-                </div>
-                <div class="name-details">
-                  <h3>Ahmet Örnekadam</h3>
-                  <h5>CEO of XYZ Company</h5>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
     </div>
   </section>
-  <section class="contact-section common-spacing">
+  <section class="contact-section common-spacing" id="contact-us">
     <div class="container contact_container">
       <h2 class="section-title">Contact Us</h2>
       <form class="row g-4 mt-2">
@@ -1439,10 +1424,39 @@
           <label class="contact_form_label contact_input_div">Email Address</label>
           <input type="text" class="contact_form_control">
         </div>
-        <div class="col-md-4  ">
+        <!-- <div class="col-md-4  ">
           <label class="contact_form_label contact_input_div">Phone</label>
           <input type="text" class="contact_form_control">
+        </div> -->
+
+        <div class="col-md-4">
+          <label class="contact_form_label contact_input_div">Phone</label>
+          <div class="custom-select-wrapper">
+            <div class="custom-select">
+              <div class="custom-select-trigger">
+                <img src="./assets/images/artwork.png" alt="Country Flag" class="flag-icon">
+              </div>
+              <div class="custom-options">
+                <div class="custom-option" data-value="+1">
+                  <img src="./assets/images/artwork.png" alt="Country Flag" class="flag-icon">
+                </div>
+                <div class="custom-option" data-value="+44">
+                  <img src="./assets/images/artwork.png" alt="Country Flag" class="flag-icon">
+                </div>
+                <!-- Add more options here -->
+              </div>
+            </div>
+            <input type="hidden" name="country_code" id="country_code">
+            <input type="text" class="contact_form_control phone">
+          </div>
         </div>
+        
+
+
+
+
+
+<!-- ----------- -->
         <div class="col-md-4   contact_input_div">
           <label class="contact_form_label">Company</label>
           <input type="text" class="contact_form_control">
@@ -1453,16 +1467,15 @@
         </div>
         <div class="col-12 d-flex justify-content-center">
           <div class="contact_form_checkbox_div">
-            <input class="contact_form_check_input" type="checkbox">
-            <label class="contact_checkbox_text">
+            <input class="contact_form_check_input" id="checkbox" type="checkbox">
+            <label class="contact_checkbox_text" for="checkbox">
               I have read and approve the
-              <u><a href="">Personal Data Protection Authority.</a></u>
+              <a href="" data-bs-toggle="modal" data-bs-target="#contactModal">Personal Data Protection Authority.</a>
             </label>
           </div>
         </div>
         <div class="col-12 d-flex justify-content-center">
-          <button class="btn primary-button" data-bs-toggle="modal" data-bs-target="#contactModal"
-            type="button">Send</button>
+          <button class="btn primary-button" type="button">Send</button>
         </div>
       </form>
     </div>
@@ -1548,17 +1561,17 @@
       </div>
     </div>
   </section>
-  <section class="footer mt-5">
+  <section class="footer mt-5" id="footer">
     <div class="container">
       <div class="col footer_div">
         <div class="row footer_up_icon_row">
-          <div class="footer_up_icon_main">
-            <div class="footer_up_icon_div">
-              <a href="#" class="footer_cont_p2_div_a">
+          <a href="#">
+            <div class="footer_up_icon_main">
+              <div class="footer_up_icon_div">
                 <img src="./assets//images/footer_Up_icon.png" class="footer_up_icon">
-              </a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="row footer_cont_div">
           <div class="col-lg-4">
@@ -1588,26 +1601,26 @@
           <div class="col-lg-4 footer_cont_p2">
             <div class="footer_cont_p2_div">
               <a href="#" class="footer_cont_p2_div_a">Home</a>
-              <a href="#" class="footer_cont_p2_div_a">DataSync</a>
-              <a href="#" class="footer_cont_p2_div_a">Features</a>
-              <a href="#" class="footer_cont_p2_div_a">Services</a>
-              <a href="#" class="footer_cont_p2_div_a">Team</a>
-              <a href="#" class="footer_cont_p2_div_a">Testimonials</a>
+              <a href="#dataSync" class="footer_cont_p2_div_a">DataSync</a>
+              <a href="#features" class="footer_cont_p2_div_a">Features</a>
+              <a href="#services" class="footer_cont_p2_div_a">Services</a>
+              <a href="#team" class="footer_cont_p2_div_a">Team</a>
+              <a href="#testimonials" class="footer_cont_p2_div_a">Testimonials</a>
             </div>
           </div>
           <div class="col-lg-4">
             <div class=" footer_cont_p3">
               <div class="footer_cont_p3_div">
-                <img src="./assets/images/footer-pin.svg" width="32px" height="32px" alt="Locationpng" />
+                <img src="./assets/images/footer-pin.svg" class="mt-1" width="32px" height="32px" alt="Locationpng" />
                 <p class="footer_p px-2 m-0">Kore Şehitleri Cad. Mithat Ünlü Sok.
                   No:1/3 34394 Zincirlikuyu / İstanbul</p>
               </div>
               <div class="footer_cont_p3_div">
-                <img src="./assets/images/phone.svg" width="32px" height="32px" alt="phonepng" />
+                <img src="./assets/images/phone.svg" class="mt-1" width="32px" height="32px" alt="phonepng" />
                 <a href="tel:02123370200" class="footer_p px-2 m-0">0212 337 02 00</a>
               </div>
               <div class="footer_cont_p3_div">
-                <img src="./assets/images/email.svg" width="32px" height="32px" alt="emailpng" />
+                <img src="./assets/images/email.svg" class="mt-1" width="32px" height="32px" alt="emailpng" />
                 <a href="mailto:contact@datasync.com" class="footer_p px-2 m-0">contact@datasync.com</a>
               </div>
               <div class="footer_cont_p3_rights">
@@ -1620,6 +1633,7 @@
     </div>
   </section>
   <script src="./assets/Js/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="./assets/Js/owl.carousel.min.js"></script>
   <script src="./assets/Js/bootstrap.bundle.min.js"></script>
   <script src="./assets/Js/index.js"></script>

@@ -103,3 +103,57 @@ $(document).ready(function () {
         $('.card4 ').removeClass('flipped');
     });
 });
+
+
+// active nav
+document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+    item.addEventListener('click', function() {
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.classList.remove('activeNav');
+      });
+  
+      this.classList.add('activeNav');
+    });
+  });
+
+
+//   active footer
+document.querySelectorAll('.footer_cont_p2_div_a').forEach(item => {
+    item.addEventListener('click', function() {
+      document.querySelectorAll('.footer_cont_p2_div_a').forEach(link => {
+        link.classList.remove('active-footer-link');
+      });
+      this.classList.add('active-footer-link');
+    });
+  });
+
+
+//   select2
+
+// Toggle the dropdown on click
+document.querySelector('.custom-select-trigger').addEventListener('click', function() {
+    document.querySelector('.custom-options').classList.toggle('open');
+  });
+  
+  // Update the selected option on click
+  document.querySelectorAll('.custom-option').forEach(function(option) {
+    option.addEventListener('click', function() {
+      const value = this.getAttribute('data-value');
+      const flag = this.querySelector('.flag-icon').src;
+      const trigger = document.querySelector('.custom-select-trigger');
+      
+      trigger.innerHTML = `<img src="${flag}" alt="Country Flag" class="flag-icon"> ${value}`;
+      document.querySelector('#country_code').value = value;
+      document.querySelector('.custom-options').classList.remove('open');
+    });
+  });
+  
+  // Close the dropdown if clicked outside
+  document.addEventListener('click', function(e) {
+    const select = document.querySelector('.custom-select');
+    if (!select.contains(e.target)) {
+      document.querySelector('.custom-options').classList.remove('open');
+    }
+  });
+  
+  

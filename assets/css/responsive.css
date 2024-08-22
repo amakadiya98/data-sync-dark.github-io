@@ -1,6 +1,10 @@
 @media only screen and (max-width: 1650px) {
     .solution-section .solution-img {
-        padding: 55px 65px 20px;
+        padding: 70px 65px 30px;
+        width: 284px;
+    }
+    .solution-section .solution-image-box{
+        transform: scale(0.9);
     }
 }
 
@@ -31,6 +35,7 @@
 
     .solution-section .solution-img {
         padding: 55px 65px 20px;
+       
     }
 
     /* new01 */
@@ -80,6 +85,15 @@
 }
 
 @media only screen and (max-width: 1200px) {
+    .team-section .card-title {
+        font-size: 28px;
+    }
+    .team-section .card-subtitle {
+        font-size: 20px;
+    }
+    .team-section .card-text {
+        font-size: 20px;
+    }
     .header-section .navbar .navbar-nav {
         max-width: 70%;
     }
@@ -192,6 +206,18 @@
 
 
 @media only screen and (max-width: 992px) {
+    .retail-tool-section::before {
+        top: -10%;
+    }
+    .wht-button {
+        display: none;
+    }
+
+    .contact_terms_div h2 {
+        margin: auto;
+        padding-left: 80px;
+    }
+
     .solution-main-content .row {
         flex-direction: column-reverse;
         gap: 60px;
@@ -276,7 +302,7 @@
     }
 
     .banner-section .banner-content .image-box .top-block img {
-        width: 90%;
+        width: 260px;
     }
 
     .banner-section .banner-content .image-box .image-block {
@@ -371,12 +397,31 @@
     .primary-button {
         font-size: 20px;
         padding: 2px 16px;
-        min-width: 240px;
+        min-width: 200px;
         text-align: center;
+    }
+    .header-section form{
+        justify-content: center;
+        align-items: center;
     }
 }
 
 @media only screen and (max-width: 768px) {
+
+    .retail-tool-section::before {
+        top: -7%;
+        left: -14%;
+        width: 114%;
+    }
+    .banner-section .banner-content .image-box .top-block img {
+        width: 268px;
+    }
+
+    .contact_terms_div .section-title {
+        font-size: 28px;
+        padding-left: 0px !important;
+    }
+
     .retail-section .section-grid-container {
         background-image: none;
     }
@@ -391,10 +436,12 @@
         height: 50px;
         top: -26px;
     }
+    
 
     .solution-section .solution-img {
         display: flex;
         justify-content: center;
+        width: auto;
     }
 
     .solution-section .solution-img {
@@ -446,6 +493,26 @@
 }
 
 @media only screen and (max-width: 620px) {
+    .team-section .card-title {
+        font-size: 24px;
+    }
+    .team-section .card-subtitle {
+        font-size: 18px;
+    }
+    .team-section .card-text {
+        font-size: 18px;
+    }
+    .retail-tool-section::before {
+        top: -3%;
+        left: -16%;
+        width: 114%;
+    }
+    .top-block h6 {
+        font-size: 16px;
+    }
+    .banner-section .banner-content .image-box .top-block img {
+        width: 224px;
+    }
     .banner-section .banner-content .icon-text-box h6 {
         font-size: 16px;
     }
@@ -467,12 +534,19 @@
         gap: 18px;
     }
 
-    .banner-section .banner-content .right-box .icon-text-box h6 {
+    /* .banner-section .banner-content .right-box .icon-text-box h6 {
         padding: 0 10px 0 40px;
+    } */
+    .banner-section .banner-content .right-box .icon-text-box h6 {
+        padding: 0 22px 0 50px;
+        width: 130px;
     }
 
-    .banner-section .banner-content .icon-text-box h6 {
+    /* .banner-section .banner-content .icon-text-box h6 {
         padding: 0 40px 0 10px;
+    } */
+    .banner-section .banner-content .icon-text-box h6 {
+        padding: 0px 60px 0px 25px;
     }
 
     .benefits-section .benefit-content-section .benefit-card p {
@@ -530,8 +604,56 @@
 }
 
 @media only screen and (max-width: 520px) {
+    .expert-section .section-title-small {
+        margin: 15px auto 25px auto;
+    }
+    .retail-tool-section::before {
+        top: -12%;
+        left: -20%;
+        width: 126%;
+    }
+    .banner-section {
+        height: auto;
+        background-position: top;
+    }
+    .top-block h6 {
+        margin-top: 15px;
+    }
+    .banner-section .banner-content .image-box .top-block img {
+        width: 178px;
+    }
+    .top-block h6 {
+        font-size: 14px;
+    }
+
+    .benefits-section::after {
+        position: absolute;
+        content: "";
+        top: -35%;
+        z-index: -1;
+        left: -13%;
+        width: 125%;
+        height: 631px;
+        background-image: url(../images/circle-bg-effect.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .benefits-section .benefit-image {
+        background: none;
+    }
+
+    .contact_terms_div {
+        margin-bottom: 25px;
+    }
+
+    .contact_terms_div .section-title {
+        font-size: 22px;
+    }
+
     .banner-section .banner-content .icon-text-box h6 {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .banner-section .banner-content .icon-text-box {
@@ -552,6 +674,7 @@
     .primary-button {
         min-width: 130px;
     }
+
     .header-section .primary-button {
         padding: 9px 40px;
     }
@@ -641,9 +764,46 @@
         font-size: 16px;
         line-height: 24px;
     }
+
+    .contact_terms_container {
+        padding: 15px 10px;
+    }
 }
 
 @media only screen and (max-width: 420px) {
+    .team-section .LinkdinIcon img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .team-section .card-title {
+        font-size: 20px;
+    }
+    .team-section .card-subtitle {
+        font-size: 12px;
+    }
+    .team-section .card-text {
+        font-size: 15px;
+    }
+   
+    .benefits-section .benefit-content-section .benefit-card {
+        width: 105%;
+        padding: 14px 5px 8px;
+    }
+    .retail-tool-section::before {
+        top: -8%;
+        left: -23%;
+    }
+    .contact_terms_div .section-title {
+        font-size: 20px;
+    }
+
+    .contact_terms_close_btn_a {
+        width: 25px;
+        height: 25px;
+        padding: 4px 10px;
+    }
+
     .banner-section .banner-content .icon-text-box {
         min-width: 120px;
     }
@@ -676,7 +836,7 @@
     }
 
     .banner-section .banner-content .image-box .top-block img {
-        width: 130%;
+        width: 126%;
     }
 
     .banner-section .banner-content .image-box .image-block img {
@@ -728,10 +888,6 @@
         gap: 30px;
     }
 
-    .banner-section .banner-content .image-box .top-block img {
-        width: 150%;
-    }
-
     .banner-section .banner-content .image-box .image-block img {
         margin-top: 0px;
     }
@@ -740,3 +896,60 @@
         padding-top: 24px;
     }
 }
+
+
+
+.solution-partner-content .row{
+    row-gap: 30px;
+   }
+   .solution-partner-content .row div{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .solution-partner-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+     padding-top: 30px;
+   }
+   
+   .solution-partner-content .brand {
+     background-color: var(--dark);
+     border-radius: 12px;
+     border: 0.6px solid #272727;
+     padding: 30px 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-height: 68px;
+     max-width: 230px;
+   }
+   .solution-partner-content .brand img{
+     width: 100%;
+   }
+   
+   @media only screen and (max-width: 578px) {
+     .solution-partner-content .row>* {
+         width: 33% !important;
+       }
+     }
+   
+   @media(max-width:520px) {
+     .solution-partner-content .row {
+       row-gap: 15px;
+   }
+     .solution-partner-content .brand {
+       padding: 10px;
+       max-width: 100px;
+       height: 50px;
+       border-radius: 5px;
+   }
+   }
+   
+   
+   
+   
+   
+   
