@@ -8,21 +8,60 @@ $(document).ready(function () {
         nav: true,
         autoWidth: false,
         dots: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
+        autoplay: true,
+        autoplayTimeout: 6000,
         autoplayHoverPause: true,
+        slideBy: 2,  
         navText: [
             nextIcon, prewIcon
         ],
         responsive: {
             0: {
+                autoplay: true,
                 items: 1
             },
             600: {
+                autoplay: true,
                 items: 1
             },
             1000: {
-                items: 2
+                items: 2,
+                autoplay: false,
+            }
+        }
+    })
+
+});
+
+$(document).ready(function () {
+    const nextIcon = '<img class="nextIcon" src="./assets/images/prewIcon.svg">'
+    const prewIcon = '<img class="prewIcon" src="./assets/images/nextIcon.svg">'
+    $(".clientSlider").owlCarousel({
+        items: 2,
+        loop: true,
+        margin: 48,
+        nav: true,
+        autoWidth: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: true,
+        slideBy: 2,  
+        navText: [
+            nextIcon, prewIcon
+        ],
+        responsive: {
+            0: {
+                autoplay: true,
+                items: 1
+            },
+            600: {
+                autoplay: true,
+                items: 1
+            },
+            1000: {
+                items: 2,
+                autoplay: false,
             }
         }
     })
@@ -156,4 +195,16 @@ document.querySelector('.custom-select-trigger').addEventListener('click', funct
     }
   });
   
-  
+//   fixed bar
+window.onscroll = function() {
+    toggleFixedHeader();
+  };
+
+  function toggleFixedHeader() {
+    const header = document.querySelector('.header-section');
+    if (window.scrollY > 80) {
+      header.classList.add('fixed');
+    } else {
+      header.classList.remove('fixed');
+    }
+  }

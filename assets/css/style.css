@@ -71,6 +71,10 @@ body {
   --white: #FFFFFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--black);
   color: var(--white);
@@ -197,7 +201,7 @@ body {
 .header-section .navbar .navbar-nav {
   flex: 1;
   justify-content: space-around;
-  max-width: 60%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -228,7 +232,7 @@ body {
 /* banner section css */
 
 .banner-section {
-  background-image: url('../images/banner-back.png');
+  background-image: url('../images/Hero-Section_BG.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
@@ -257,7 +261,7 @@ body {
 
 .banner-section::before {
   position: absolute;
-  content: "";
+  /* content: ""; */
   background: linear-gradient(0deg, #000000 14.23%, rgba(0, 0, 0, 0.3) 49.61%, rgba(0, 0, 0, 0.3) 72.47%, #000000 82.47%);
   height: 100%;
   width: 100%;
@@ -497,6 +501,42 @@ body {
 .solution-partner-content .brand img {
   width: 100%;
 }
+
+.solution-partner-content .row{
+  row-gap: 30px;
+ }
+ .solution-partner-content .row .brand{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+ }
+ .solution-partner-content .row .brand img{
+  width: auto;
+ }
+ .solution-partner-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   padding-top: 30px;
+ }
+ 
+ .solution-partner-content .brand {
+   background-color: var(--dark);
+   border-radius: 12px;
+   border: 0.6px solid #272727;
+   padding: 30px 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-height: 68px;
+   max-width: 230px;
+ }
+ .solution-partner-content .brand img{
+   width: 100%;
+ }
+ 
 
 /* benefits section css */
 .benefits-section {
@@ -1209,10 +1249,18 @@ body {
   position: relative;
   overflow: hidden;
 }
+.retail-tool-section{
+  background-image: url(../images/tool-section-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -220px;
+  padding-top: 120px;
+  background-attachment: unset;
+}
 
 .retail-tool-section::before {
   position: absolute;
-  content: "";
+  /* content: ""; */
   top: -13%;
   left: -3%;
   width: 100%;
@@ -2376,4 +2424,14 @@ border-bottom-left-radius: 0px;
     width: 35px;
   }
 
+}
+
+/* for fixed */
+.header-section.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+  background-color: var(--black);
 }
