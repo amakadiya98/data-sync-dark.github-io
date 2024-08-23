@@ -196,15 +196,15 @@ document.querySelector('.custom-select-trigger').addEventListener('click', funct
   });
   
 //   fixed bar
-window.onscroll = function() {
-    toggleFixedHeader();
-  };
+// window.onscroll = function() {
+//     toggleFixedHeader();
+//   };
 
-  function toggleFixedHeader() {
-    const header = document.querySelector('.header-section');
-    if (window.scrollY > 80) {
-      header.classList.add('fixed');
-    } else {
-      header.classList.remove('fixed');
-    }
-  }
+//   function toggleFixedHeader() {
+//     const header = document.querySelector('.header-section');
+//     if (window.scrollY > 1) {
+//       header.classList.add('fixed');
+//     } else {
+//       header.classList.remove('fixed');
+//     }
+//   }

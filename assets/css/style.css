@@ -71,9 +71,6 @@ body {
   --white: #FFFFFF;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   background-color: var(--black);
@@ -238,6 +235,7 @@ body {
   height: 80vh;
   position: relative;
   z-index: 2;
+  margin-top: 60px;
 }
 
 .top-block {
