@@ -682,6 +682,7 @@
     .banner-section {
         height: auto;
         background-position: top;
+        padding-top: 100px !important;
     }
     .top-block h6 {
         margin-top: 15px;
