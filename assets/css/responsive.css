@@ -1,3 +1,6 @@
+.small-logo{
+    height: 50px;
+}
 @media only screen and (max-width: 1650px) {
     .solution-section .solution-img {
         padding: 70px 65px 30px;
@@ -229,11 +232,26 @@
 
 
 @media only screen and (max-width: 992px) {
+    .small-logo{
+        height: auto;
+    }
     .retail-tool-section::before {
         top: -10%;
     }
-    .wht-button {
+    .wht-button span{
         display: none;
+    }
+    .wht-button img.me-2{
+        margin-right: 0 !important;
+    }
+    .wht-button .primary-button{
+        height: 70px;
+        border-radius: 50%;
+        width: 70px;
+        min-width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .retail-tool-section {
         background-position-y: -100px;
@@ -433,6 +451,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+    
     .solution-section .solution-image-box{
         transform: scale(1);
     }
@@ -517,6 +536,9 @@
         font-size: 18px;
         padding: 0px 40px;
     }
+    .wht-button .primary-button{
+        padding: 0 20px;
+    }
 
     .retail-section .section-grid-container {
         margin-top: 30px;
@@ -524,6 +546,17 @@
 }
 
 @media only screen and (max-width: 620px) {
+    .wht-button .primary-button{
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+    }
+    .wht-button {
+        right: -10%;
+    }
+    .wht-button .primary-button img{
+        width: 30px;
+    }
     .retail-tool-section {
         background-position-y: -60px;
     }
